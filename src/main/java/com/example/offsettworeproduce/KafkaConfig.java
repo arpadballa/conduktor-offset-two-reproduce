@@ -19,15 +19,15 @@ public class KafkaConfig {
 
     @Bean
     public Serde<Input> inputSerde() {
-        return createSerde(Input.class);
+        return createSerde();
     }
 
     @Bean
     public Serde<Output> outputSerde() {
-        return createSerde(Output.class);
+        return createSerde();
     }
 
-    private <T extends SpecificRecord> SpecificAvroSerde<T> createSerde(Class<T> clazz) {
+    private <T extends SpecificRecord> SpecificAvroSerde<T> createSerde() {
         SpecificAvroSerde<T> serde = new SpecificAvroSerde<>();
         serde.configure(schemaRegistryConfig(), false);
         return serde;
