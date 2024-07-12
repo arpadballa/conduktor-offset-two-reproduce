@@ -1,0 +1,19 @@
+{
+  "type": "record",
+  "name": "Output",
+  "namespace": "com.example.offsettworeproduce.avro",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "age",
+      "type": "int"
+    },
+    {
+      "name": "processed",
+      "type": "boolean"
+    }
+  ]
+}

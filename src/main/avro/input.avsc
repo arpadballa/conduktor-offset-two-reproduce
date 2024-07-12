@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "Input",
+  "namespace": "com.example.offsettworeproduce.avro",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "age",
+      "type": "int"
+    }
+  ]
+}
